@@ -1,40 +1,33 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
+import React, { useEffect } from "react";
 import App from "./App.jsx";
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>
-)(function ($, document, window) {
-	$(document).ready(function () {
+function Main() {
+	useEffect(() => {
 		// Cloning main navigation for mobile menu
-		$(".mobile-navigation").append($(".main-navigation .menu").clone());
+		const mobileNav = document.querySelector(".mobile-navigation");
+		const mainNav = document.querySelector(".main-navigation .menu");
+		if (mobileNav && mainNav) {
+			mobileNav.appendChild(mainNav.cloneNode(true));
+		}
 
 		// Mobile menu toggle
-		$(".menu-toggle").click(function () {
-			$(".mobile-navigation").slideToggle();
-		});
-
-		var map = $(".map");
-		var latitude = map.data("latitude");
-		var longitude = map.data("longitude");
-		if (map.length) {
-			map.gmap3({
-				map: {
-					options: {
-						center: [latitude, longitude],
-						zoom: 15,
-						scrollwheel: false,
-					},
-				},
-				marker: {
-					latLng: [latitude, longitude],
-				},
+		const menuToggle = document.querySelector(".menu-toggle");
+		const mobileNavigation = document.querySelector(".mobile-navigation");
+		if (menuToggle && mobileNavigation) {
+			menuToggle.addEventListener("click", () => {
+				mobileNavigation.classList.toggle("open");
 			});
 		}
-	});
+	}, []);
 
-	$(window).load(function () {});
-});
+	return (
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>
+	);
+}
+
+// Render the app using createRoot
+createRoot(document.getElementById("root")).render(<Main />);
