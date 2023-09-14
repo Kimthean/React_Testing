@@ -8,10 +8,10 @@ function Header() {
 	};
 
 	return (
-		<div className="site-content">
-			<div className="site-header">
-				<div className="container">
-					<a href="index.html" className="branding">
+		<div className="container">
+			<div className="site-content">
+				<div className="site-header">
+					<a href="Home" className="branding">
 						<img src="/src/assets/images/logo.png" alt="" className="logo" />
 						<div className="logo-type">
 							<h1 className="site-title">Company name</h1>

@@ -1292,6 +1292,7 @@ form textarea {
  * Header Styles
  */
 .site-header {
+  margin-bottom: 17px;
   padding: 50px 0;
 }
 .site-header .branding {
@@ -1954,7 +1955,8 @@ form textarea {
  */
 .site-footer {
   background: #262936;
-  padding: 50px 0;
+  padding: 60px 0;
+  margin: auto;
 }
 .site-footer .subscribe-form {
   position: relative;

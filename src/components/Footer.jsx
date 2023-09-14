@@ -39,7 +39,6 @@ class Footer extends React.Component {
 							</div>
 						</div>
 					</div>
-
 					<p className="colophon">
 						Copyright 2014 Company name. Designed by Themezy. All rights
 						reserved

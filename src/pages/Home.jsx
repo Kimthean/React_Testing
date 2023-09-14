@@ -1,11 +1,13 @@
 import React from "react";
+import Hero from "../components/Hero";
 
 class Home extends React.Component {
 	render() {
 		return (
 			<div className="home">
-				<div className="forecast-table">
-					<div className="container">
+				<Hero />
+				<div className="container">
+					<div className="forecast-table">
 						<div className="forecast-container">
 							<div className="today forecast">
 								<div className="forecast-header">
