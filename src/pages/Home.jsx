@@ -330,7 +330,6 @@ class Home extends React.Component {
 												Neque porro quisquam est qui dolorem ipsum quia
 											</a>
 										</li>
-										{/* Repeat similar list items */}
 									</ul>
 								</div>
 								<div className="col-md-4">

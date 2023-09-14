@@ -1,6 +1,7 @@
 /*
  * Header Styles
  */
+	
 
 .site-header{
 	margin-bottom: 17px;
@@ -26,86 +27,60 @@
 	}
 }
 
-.main-navigation{
-	float: right;
+/* styles.scss */
 
-	.menu-toggle,.menu{vertical-align: middle}
+/* Style the custom Navbar */
+.custom-navbar {
+	float: right; /* Float the Navbar to the right */
+  }
+  
+  /* Style the Navbar Toggle button (for mobile) */
+  .navbar-toggler {
+	background: none;
 
-	.menu-toggle{
-		background: none;
-		border: 2px solid transparent;
-		color: white;
-		padding: 20px;
-		border-radius: 40px;
-		transition: .3s ease;
-		display: none;
-		outline: none;
-		@media screen and (max-width:990px){display: inline-block}
-
-		&:hover, &:active{
-			border-color: $accent-color;
-			color: $accent-color;
-		}
-	}
-
-	.menu{
-		list-style:none;
-		display: inline-block;
-		@include clearfix;
-
-		@media screen and (max-width:990px){display: none}
-
-		.menu-item{
-			float: left;
-			margin-left: 10px;
-			a{
-				padding: 5px 25px;
-				border: 2px solid transparent;
-				border-radius: 30px;
-				color: white;
-				transition: .3s ease;
-				font-weight: 400;
-			}
-
-			&.current-menu-item,&:hover{
-				a{
-					border-color: $accent-color;
-					color: $accent-color;
-				}
-			}
-		}
-	}
-}
-
-.mobile-navigation{
-	padding: 30px 0 0;
-	clear: both;
+	color: white;
+	padding: 20px;
+	border-radius: 5px;
+	transition: 0.3s ease;
 	display: none;
-	@media screen and (min-width:991px){display: none!important}
-
-	.menu{
-		background: $secondary-color;
-		list-style: none;
-		text-align: center;
-		border-radius: 10px;
-		overflow: hidden;
-
-		a{
-			padding: 20px;
-			display: block;
-			color: white;
-		}
-
-		.menu-item{
-			border-bottom: 1px solid rgba(255,255,255,.1);
-			&:last-child{border-bottom: none}
-
-			&.current-menu-item a{
-				color: $accent-color;
-			}
-		}
+	outline: none;
+  }
+  
+  /* Show the Navbar Toggle button on smaller screens */
+  @media screen and (max-width: 990px) {
+	.navbar-toggler {
+	  display: inline-block;
+	  
 	}
-}
+  }
+  
+  /* Style the Navbar Toggle button when hovered or active */
+  .navbar-toggler:hover{
+	color: $accent-color; /* Change text color on hover or focus */
+  }
+  
+  /* Style the Nav.Link items */
+  .nav-link {
+	padding: 5px 25px;
+	border: 2px solid transparent;
+	border-radius: 30px;
+	color: white;
+	transition: 0.3s ease;
+	font-weight: 400;
+	margin-left: 10px; /* Add margin between Nav.Link items */
+	float: left	; /* Float Nav.Link items to the left */
+  }
+  
+  /* Style the current menu item */
+  
+
+  .nav-link:hover {
+
+	color: $accent-color; /* Change text color on hover or when active */
+  }
+  
+  
+  
 
 .hero{
 	background-size: cover;

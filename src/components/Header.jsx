@@ -1,79 +1,48 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Header() {
-	const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-	const toggleMobileMenu = () => {
-		setMobileMenuOpen(!isMobileMenuOpen);
-	};
-
 	return (
 		<div className="container">
 			<div className="site-content">
 				<div className="site-header">
-					<a href="Home" className="branding">
-						<img src="/src/assets/images/logo.png" alt="" className="logo" />
-						<div className="logo-type">
-							<h1 className="site-title">Company name</h1>
-							<small className="site-description">tagline goes here</small>
-						</div>
-					</a>
-
-					<div className="main-navigation">
-						<button
-							type="button"
-							className="menu-toggle"
-							onClick={toggleMobileMenu}
-						>
-							<i className="fa fa-bars"></i>
-						</button>
-						<ul className={`menu ${isMobileMenuOpen ? "open" : ""}`}>
-							<li className="menu-item current-menu-item">
-								<a href="Home">Home</a>
-							</li>
-							<li className="menu-item">
-								<a href="news">News</a>
-							</li>
-							<li className="menu-item">
-								<a href="LiveCam">Live cameras</a>
-							</li>
-							<li className="menu-item">
-								<a href="photos">Photos</a>
-							</li>
-							<li className="menu-item">
-								<a href="contact">Contact</a>
-							</li>
-						</ul>
-					</div>
-
-					<div
-						className={`mobile-navigation ${isMobileMenuOpen ? "open" : ""}`}
-					>
-						<a href="index.html" className="branding">
+					<Navbar expand="lg">
+						<Navbar.Brand as={Link} to="/" className="branding">
 							<img src="/src/assets/images/logo.png" alt="" className="logo" />
 							<div className="logo-type">
 								<h1 className="site-title">Company name</h1>
 								<small className="site-description">tagline goes here</small>
 							</div>
-						</a>
-						<ul className="menu">
-							<li className="menu-item current-menu-item">
-								<a href="Home">Home</a>
-							</li>
-							<li className="menu-item">
-								<a href="news">News</a>
-							</li>
-							<li className="menu-item">
-								<a href="live-cameras">Live cameras</a>
-							</li>
-							<li className="menu-item">
-								<a href="photos">Photos</a>
-							</li>
-							<li className="menu-item">
-								<a href="contact">Contact</a>
-							</li>
-						</ul>
-					</div>
+						</Navbar.Brand>
+
+						<Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+						<Navbar.Collapse id="main-navigation">
+							<Nav className="menu">
+								<Nav.Link
+									as={Link}
+									to="/"
+									className="menu-item current-menu-item"
+								>
+									Home
+								</Nav.Link>
+								<Nav.Link as={Link} to="/News" className="menu-item">
+									News
+								</Nav.Link>
+								<Nav.Link as={Link} to="/LiveCam" className="menu-item">
+									Live cameras
+								</Nav.Link>
+								<Nav.Link as={Link} to="/Photos" className="menu-item">
+									Photos
+								</Nav.Link>
+								<Nav.Link as={Link} to="/Contact" className="menu-item">
+									Contact
+								</Nav.Link>
+							</Nav>
+						</Navbar.Collapse>
+					</Navbar>
 				</div>
 			</div>
 		</div>

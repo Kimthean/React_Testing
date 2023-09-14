@@ -245,9 +245,6 @@ table {
   box-sizing: border-box;
 }
 
-/*
- * Global Styles
- */
 html {
   font-size: 14px;
 }
@@ -1318,95 +1315,49 @@ form textarea {
   color: #bfc1c8;
 }
 
-.main-navigation {
-  float: right;
+/* styles.scss */
+/* Style the custom Navbar */
+.custom-navbar {
+  float: right; /* Float the Navbar to the right */
 }
-.main-navigation .menu-toggle, .main-navigation .menu {
-  vertical-align: middle;
-}
-.main-navigation .menu-toggle {
+
+/* Style the Navbar Toggle button (for mobile) */
+.navbar-toggler {
   background: none;
-  border: 2px solid transparent;
   color: white;
   padding: 20px;
-  border-radius: 40px;
+  border-radius: 5px;
   transition: 0.3s ease;
   display: none;
   outline: none;
 }
+
+/* Show the Navbar Toggle button on smaller screens */
 @media screen and (max-width: 990px) {
-  .main-navigation .menu-toggle {
+  .navbar-toggler {
     display: inline-block;
   }
 }
-.main-navigation .menu-toggle:hover, .main-navigation .menu-toggle:active {
-  border-color: #009ad8;
-  color: #009ad8;
+/* Style the Navbar Toggle button when hovered or active */
+.navbar-toggler:hover {
+  color: #009ad8; /* Change text color on hover or focus */
 }
-.main-navigation .menu {
-  list-style: none;
-  display: inline-block;
-  *zoom: 1;
-}
-.main-navigation .menu:after {
-  content: " ";
-  clear: both;
-  display: block;
-  overflow: hidden;
-  height: 0;
-}
-@media screen and (max-width: 990px) {
-  .main-navigation .menu {
-    display: none;
-  }
-}
-.main-navigation .menu .menu-item {
-  float: left;
-  margin-left: 10px;
-}
-.main-navigation .menu .menu-item a {
+
+/* Style the Nav.Link items */
+.nav-link {
   padding: 5px 25px;
   border: 2px solid transparent;
   border-radius: 30px;
   color: white;
   transition: 0.3s ease;
   font-weight: 400;
-}
-.main-navigation .menu .menu-item.current-menu-item a, .main-navigation .menu .menu-item:hover a {
-  border-color: #009ad8;
-  color: #009ad8;
+  margin-left: 10px; /* Add margin between Nav.Link items */
+  float: left; /* Float Nav.Link items to the left */
 }
 
-.mobile-navigation {
-  padding: 30px 0 0;
-  clear: both;
-  display: none;
-}
-@media screen and (min-width: 991px) {
-  .mobile-navigation {
-    display: none !important;
-  }
-}
-.mobile-navigation .menu {
-  background: #262936;
-  list-style: none;
-  text-align: center;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.mobile-navigation .menu a {
-  padding: 20px;
-  display: block;
-  color: white;
-}
-.mobile-navigation .menu .menu-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.mobile-navigation .menu .menu-item:last-child {
-  border-bottom: none;
-}
-.mobile-navigation .menu .menu-item.current-menu-item a {
-  color: #009ad8;
+/* Style the current menu item */
+.nav-link:hover {
+  color: #009ad8; /* Change text color on hover or when active */
 }
 
 .hero {

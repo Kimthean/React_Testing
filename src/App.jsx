@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
+import News from "./pages/News";
 import LiveCam from "./pages/LiveCam";
 import "./sass/style.css";
 
@@ -13,8 +14,10 @@ function App() {
 		<Router>
 			<Header />
 			<Routes>
-				<Route path="/Home" element={<Home />} />
+				<Route path="/" element={<Home />} />
+				<Route path="/News" element={<News />} />
 				<Route path="/LiveCam" element={<LiveCam />} />
+				{/* <Route path="/Photos" element={<Photos />} /> */}
 			</Routes>
 
 			<Footer />
