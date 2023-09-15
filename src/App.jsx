@@ -5,8 +5,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
-import News from "./pages/News";
 import LiveCam from "./pages/LiveCam";
+import News from "./pages/News";
+
 import "./sass/style.css";
 
 function App() {

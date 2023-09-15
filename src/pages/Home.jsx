@@ -52,7 +52,6 @@ function Home() {
 								<div className="location">{data.name}</div>
 								<div className="degree">
 									<div className="num">
-										{Math.round(data.main.temp)}
 										<sup>o</sup>C
 									</div>
 									<div className="forecast-icon">
@@ -65,16 +64,14 @@ function Home() {
 								</div>
 								<span>
 									<img src="src/assets/images/icon-umberella.png" alt="" />
-									{Math.round(data.main.humidity)}%
 								</span>
 								<span>
 									<img src="src/assets/images/icon-wind.png" alt="" />
-									{Math.round(data.wind.speed)}
 									km/h
 								</span>
 								<span>
 									<img src="src/assets/images/icon-compass.png" alt="" />
-									{data.wind.deg}
+
 									<sup>o</sup>
 								</span>
 							</div>
