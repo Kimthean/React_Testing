@@ -1316,6 +1316,14 @@ form textarea {
 }
 
 /* styles.scss */
+.navbar {
+  padding: 10px 20px;
+  margin-left: 43%;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
 /* Style the custom Navbar */
 .custom-navbar {
   float: right; /* Float the Navbar to the right */
@@ -1351,13 +1359,8 @@ form textarea {
   color: white;
   transition: 0.3s ease;
   font-weight: 400;
-  margin-left: 10px; /* Add margin between Nav.Link items */
+  margin-left: 43px; /* Add margin between Nav.Link items */
   float: left; /* Float Nav.Link items to the left */
-}
-
-/* Style the current menu item */
-.nav-link:hover {
-  color: #009ad8; /* Change text color on hover or when active */
 }
 
 .hero {

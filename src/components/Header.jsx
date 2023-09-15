@@ -23,14 +23,13 @@ function Header() {
 		<div className="container">
 			<div className="site-content">
 				<div className="site-header">
+					<img src="/src/assets/images/logo.png" alt="" className="logo" />
+					<div className="logo-type">
+						<h1 className="site-title">Company name</h1>
+						<small className="site-description">tagline goes here</small>
+					</div>
 					<Navbar expand="lg">
-						<Navbar.Brand as={Link} to="/" className="branding">
-							<img src="/src/assets/images/logo.png" alt="" className="logo" />
-							<div className="logo-type">
-								<h1 className="site-title">Company name</h1>
-								<small className="site-description">tagline goes here</small>
-							</div>
-						</Navbar.Brand>
+						<Navbar.Brand as={Link} to="/" className="branding"></Navbar.Brand>
 
 						{/* Place the custom ToggleIcon within the Navbar.Toggle */}
 						<Navbar.Toggle aria-controls="basic-navbar-nav">
