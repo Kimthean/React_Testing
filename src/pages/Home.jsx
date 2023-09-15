@@ -49,10 +49,11 @@ function Home() {
 								<div className="date">6 Oct</div>
 							</div>
 							<div className="forecast-content">
-								<div className="location">New York</div>
+								<div className="location">{data.name}</div>
 								<div className="degree">
 									<div className="num">
-										23<sup>o</sup>C
+										{Math.round(data.main.temp)}
+										<sup>o</sup>C
 									</div>
 									<div className="forecast-icon">
 										<img
@@ -64,15 +65,17 @@ function Home() {
 								</div>
 								<span>
 									<img src="src/assets/images/icon-umberella.png" alt="" />
-									20%
+									{Math.round(data.main.humidity)}%
 								</span>
 								<span>
 									<img src="src/assets/images/icon-wind.png" alt="" />
-									18km/h
+									{Math.round(data.wind.speed)}
+									km/h
 								</span>
 								<span>
 									<img src="src/assets/images/icon-compass.png" alt="" />
-									East
+									{data.wind.deg}
+									<sup>o</sup>
 								</span>
 							</div>
 						</div>
@@ -89,10 +92,10 @@ function Home() {
 									/>
 								</div>
 								<div className="degree">
-									23<sup>o</sup>C
+									25<sup>o</sup>C
 								</div>
 								<small>
-									18<sup>o</sup>
+									15<sup>o</sup>
 								</small>
 							</div>
 						</div>
@@ -109,10 +112,10 @@ function Home() {
 									/>
 								</div>
 								<div className="degree">
-									23<sup>o</sup>C
+									29<sup>o</sup>C
 								</div>
 								<small>
-									18<sup>o</sup>
+									20<sup>o</sup>
 								</small>
 							</div>
 						</div>
@@ -129,10 +132,10 @@ function Home() {
 									/>
 								</div>
 								<div className="degree">
-									23<sup>o</sup>C
+									27<sup>o</sup>C
 								</div>
 								<small>
-									18<sup>o</sup>
+									16<sup>o</sup>
 								</small>
 							</div>
 						</div>
@@ -149,10 +152,10 @@ function Home() {
 									/>
 								</div>
 								<div className="degree">
-									23<sup>o</sup>C
+									16<sup>o</sup>C
 								</div>
 								<small>
-									18<sup>o</sup>
+									5<sup>o</sup>
 								</small>
 							</div>
 						</div>
@@ -169,10 +172,10 @@ function Home() {
 									/>
 								</div>
 								<div className="degree">
-									23<sup>o</sup>C
+									5<sup>o</sup>C
 								</div>
 								<small>
-									18<sup>o</sup>
+									-2<sup>o</sup>
 								</small>
 							</div>
 						</div>
@@ -189,10 +192,10 @@ function Home() {
 									/>
 								</div>
 								<div className="degree">
-									23<sup>o</sup>C
+									-6<sup>o</sup>C
 								</div>
 								<small>
-									18<sup>o</sup>
+									-12<sup>o</sup>
 								</small>
 							</div>
 						</div>

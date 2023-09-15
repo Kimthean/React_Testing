@@ -4,24 +4,24 @@
 	
 
 .site-header{
-	margin-bottom: 17px;
-	padding: 50px 0;
+	display: flex;
+
+
 	.branding{
 		float: left;
-
-		.logo,.logo-type{
+		.logo{
 			display: inline-block;
 			vertical-align: middle;
 		}
-		.logo{margin-right: 10px;}
+		.logo{margin-right: 20px;}
 		.site-title{
-			margin-bottom: 5px;
+			margin-bottom: 50px;
 			@include em(16);
 			color: white;
 		}
 		.site-description{
 			@include em(10);
-			display: block;
+			display: flex;
 			color: $body-color;
 		}
 	}
