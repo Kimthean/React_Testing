@@ -2,208 +2,230 @@ import React from "react";
 
 function Photo() {
 	return (
-		<div class="fullwidth-block">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="photo">
+		<div className="fullwidth-block">
+			<div className="container">
+				<div className="row">
+					<div className="col-md-6">
+						<div className="photo">
 							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-1.jpg"
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-1.jpg")',
+								}}
 							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
+							<div className="photo-details">
+								<h3 className="photo-title">
 									<a href="#">Neque porro quisquam</a>
 								</h3>
 								<p>
 									Atatem accusantium aperiam eaque quae quasi architecto beatae
 									vitae dicta sunt explicabo nemo enim.
 								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="photo">
-							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-2.jpg"
-							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
-									<a href="#">Neque porro quisquam</a>
-								</h3>
-								<p>
-									Atatem accusantium aperiam eaque quae quasi architecto beatae
-									vitae dicta sunt explicabo nemo enim.
-								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="photo">
-							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-3.jpg"
-							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
-									<a href="#">Neque porro quisquam</a>
-								</h3>
-								<p>
-									Atatem accusantium aperiam eaque quae quasi architecto beatae
-									vitae dicta sunt explicabo nemo enim.
-								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="photo">
-							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-4.jpg"
-							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
-									<a href="#">Neque porro quisquam</a>
-								</h3>
-								<p>
-									Atatem accusantium aperiam eaque quae quasi architecto beatae
-									vitae dicta sunt explicabo nemo enim.
-								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="photo">
-							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-5.jpg"
-							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
-									<a href="#">Neque porro quisquam</a>
-								</h3>
-								<p>
-									Atatem accusantium aperiam eaque quae quasi architecto beatae
-									vitae dicta sunt explicabo nemo enim.
-								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
 									</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="photo">
+					<div className="col-md-6">
+						<div className="photo">
 							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-4.jpg"
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-2.jpg")',
+								}}
 							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
+							<div className="photo-details">
+								<h3 className="photo-title">
 									<a href="#">Neque porro quisquam</a>
 								</h3>
 								<p>
 									Atatem accusantium aperiam eaque quae quasi architecto beatae
 									vitae dicta sunt explicabo nemo enim.
 								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
 									</span>
 								</div>
 							</div>
 						</div>
-						<div class="photo">
+						<div className="photo">
 							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-7.jpg"
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-3.jpg")',
+								}}
 							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
+							<div className="photo-details">
+								<h3 className="photo-title">
 									<a href="#">Neque porro quisquam</a>
 								</h3>
 								<p>
 									Atatem accusantium aperiam eaque quae quasi architecto beatae
 									vitae dicta sunt explicabo nemo enim.
 								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
 									</span>
 								</div>
 							</div>
 						</div>
-						<div class="photo">
+						<div className="photo">
 							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-8.jpg"
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-4.jpg")',
+								}}
 							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
+							<div className="photo-details">
+								<h3 className="photo-title">
 									<a href="#">Neque porro quisquam</a>
 								</h3>
 								<p>
 									Atatem accusantium aperiam eaque quae quasi architecto beatae
 									vitae dicta sunt explicabo nemo enim.
 								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
 									</span>
 								</div>
 							</div>
 						</div>
-						<div class="photo">
+						<div className="photo">
 							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-9.jpg"
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-5.jpg")',
+								}}
 							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
+							<div className="photo-details">
+								<h3 className="photo-title">
 									<a href="#">Neque porro quisquam</a>
 								</h3>
 								<p>
 									Atatem accusantium aperiam eaque quae quasi architecto beatae
 									vitae dicta sunt explicabo nemo enim.
 								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
 									</span>
 								</div>
 							</div>
 						</div>
-						<div class="photo">
+					</div>
+					<div className="col-md-6">
+						<div className="photo">
 							<div
-								class="photo-preview photo-detail"
-								data-bg-image="images/photo-10.jpg"
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-4.jpg")',
+								}}
 							></div>
-							<div class="photo-details">
-								<h3 class="photo-title">
+							<div className="photo-details">
+								<h3 className="photo-title">
 									<a href="#">Neque porro quisquam</a>
 								</h3>
 								<p>
 									Atatem accusantium aperiam eaque quae quasi architecto beatae
 									vitae dicta sunt explicabo nemo enim.
 								</p>
-								<div class="star-rating" title="Rated 1 out of 5">
-									<span style="width:60%">
-										<strong class="rating">1</strong> out of 5
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
+									</span>
+								</div>
+							</div>
+						</div>
+						<div className="photo">
+							<div
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-7.jpg")',
+								}}
+							></div>
+							<div className="photo-details">
+								<h3 className="photo-title">
+									<a href="#">Neque porro quisquam</a>
+								</h3>
+								<p>
+									Atatem accusantium aperiam eaque quae quasi architecto beatae
+									vitae dicta sunt explicabo nemo enim.
+								</p>
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
+									</span>
+								</div>
+							</div>
+						</div>
+						<div className="photo">
+							<div
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-8.jpg")',
+								}}
+							></div>
+							<div className="photo-details">
+								<h3 className="photo-title">
+									<a href="#">Neque porro quisquam</a>
+								</h3>
+								<p>
+									Atatem accusantium aperiam eaque quae quasi architecto beatae
+									vitae dicta sunt explicabo nemo enim.
+								</p>
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
+									</span>
+								</div>
+							</div>
+						</div>
+						<div className="photo">
+							<div
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-9.jpg")',
+								}}
+							></div>
+							<div className="photo-details">
+								<h3 className="photo-title">
+									<a href="#">Neque porro quisquam</a>
+								</h3>
+								<p>
+									Atatem accusantium aperiam eaque quae quasi architecto beatae
+									vitae dicta sunt explicabo nemo enim.
+								</p>
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
+									</span>
+								</div>
+							</div>
+						</div>
+						<div className="photo">
+							<div
+								className="photo-preview photo-detail"
+								style={{
+									backgroundImage: 'url("src/assets/images/photo-10.jpg")',
+								}}
+							></div>
+							<div className="photo-details">
+								<h3 className="photo-title">
+									<a href="#">Neque porro quisquam</a>
+								</h3>
+								<p>
+									Atatem accusantium aperiam eaque quae quasi architecto beatae
+									vitae dicta sunt explicabo nemo enim.
+								</p>
+								<div className="star-rating" title="Rated 1 out of 5">
+									<span style={{ width: "60%" }}>
+										<strong className="rating">1</strong> out of 5
 									</span>
 								</div>
 							</div>
