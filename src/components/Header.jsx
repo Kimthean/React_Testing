@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// Define the ToggleIcon component with the custom SVG
 function ToggleIcon() {
 	return (
 		<svg
@@ -52,7 +51,7 @@ function Header() {
 							<Nav.Link as={Link} to="/LiveCam" className="menu-item">
 								Live cameras
 							</Nav.Link>
-							<Nav.Link as={Link} to="/Photos" className="menu-item">
+							<Nav.Link as={Link} to="/Photo" className="menu-item">
 								Photos
 							</Nav.Link>
 							<Nav.Link as={Link} to="/Contact" className="menu-item">

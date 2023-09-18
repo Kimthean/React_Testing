@@ -1,12 +1,24 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 function Home() {
-	const [data, setData] = React.useState({});
-	const [location, setLocation] = React.useState("");
-
+	const [data, setData] = useState({});
+	const [location, setLocation] = useState("");
 	const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${location}&appid=3abb762f2b6fd024026086b6b6bb36ab`;
+
+	const [formattedDate, setFormattedDate] = useState("");
+
+	useEffect(() => {
+		const options = {
+			weekday: "long",
+			day: "numeric",
+			month: "short",
+		};
+
+		const currentDate = new Date();
+		const formatted = currentDate.toLocaleDateString("en-US", options);
+		setFormattedDate(formatted);
+	}, []);
 
 	const searchFunction = (event) => {
 		axios.get(url).then((res) => {
@@ -16,10 +28,11 @@ function Home() {
 		});
 		setLocation("");
 	};
-	console.log(data);
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		searchFunction();
+		setLocation("");
 	};
 
 	return (
@@ -45,8 +58,7 @@ function Home() {
 					<div className="forecast-container">
 						<div className="today forecast">
 							<div className="forecast-header">
-								<div className="day">Monday</div>
-								<div className="date">6 Oct</div>
+								<div className="day">{formattedDate}</div>
 							</div>
 							<div className="forecast-content">
 								<div className="location">{data.name}</div>
@@ -65,14 +77,15 @@ function Home() {
 								</div>
 								<span>
 									<img src="src/assets/images/icon-umberella.png" alt="" />
+									{Math.round(data.main ? data.main.humidity : "0")}%
 								</span>
 								<span>
 									<img src="src/assets/images/icon-wind.png" alt="" />
-									km/h
+									{data.wind ? data.wind.speed : "0"} km/h
 								</span>
 								<span>
 									<img src="src/assets/images/icon-compass.png" alt="" />
-
+									{Math.round(data.wind ? data.wind.deg : "0")}
 									<sup>o</sup>
 								</span>
 							</div>
