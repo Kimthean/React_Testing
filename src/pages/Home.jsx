@@ -16,7 +16,7 @@ function Home() {
 		});
 		setLocation("");
 	};
-
+	console.log(data);
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		searchFunction();
@@ -52,6 +52,7 @@ function Home() {
 								<div className="location">{data.name}</div>
 								<div className="degree">
 									<div className="num">
+										{Math.round(data.main ? data.main.temp : "0")}
 										<sup>o</sup>C
 									</div>
 									<div className="forecast-icon">
