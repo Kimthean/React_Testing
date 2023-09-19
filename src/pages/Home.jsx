@@ -61,10 +61,12 @@ function Home() {
 								<div className="day">{formattedDate}</div>
 							</div>
 							<div className="forecast-content">
-								<div className="location">{data.name}</div>
+								<div className="location">
+									{data.name ? data.name : "New York"}
+								</div>
 								<div className="degree">
 									<div className="num">
-										{Math.round(data.main ? data.main.temp : "0")}
+										{Math.round(data.main ? data.main.temp : "10")}
 										<sup>o</sup>C
 									</div>
 									<div className="forecast-icon">

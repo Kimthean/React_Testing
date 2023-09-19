@@ -1627,48 +1627,39 @@ form textarea {
   color: white;
 }
 
-.sidebar .widget {
-  background: #262936;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 30px;
+.star-rating {
+  float: none;
+  overflow: hidden;
+  position: relative;
+  height: 15px;
+  line-height: 15px;
+  font-size: 16px;
+  width: 100px;
+  font-family: "FontAwesome";
 }
-.sidebar .widget .widget-title {
-  font-size: 24px;
-  font-size: 1.7142857143em;
-  margin-bottom: 20px;
-  font-weight: 300;
+.star-rating:before {
+  content: "\f005\f005\f005\f005\f005";
+  color: #1e202b;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
-.sidebar .widget .arrow-list li {
-  border: none;
-}
-.sidebar .widget.top-rated {
-  padding: 0;
-}
-.sidebar .widget.top-rated .widget-title {
-  padding: 20px 20px 0;
-}
-.sidebar .widget.top-rated ul {
-  list-style: none;
-}
-.sidebar .widget.top-rated ul li {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 20px;
-}
-.sidebar .widget.top-rated ul li:last-child {
-  border-bottom: none;
-}
-.sidebar .widget.top-rated .entry-title {
-  font-size: 14px;
-  font-size: 1em;
-  margin-bottom: 5px;
-  font-weight: 300;
-}
-.sidebar .widget.top-rated .entry-title a {
-  color: #bfc1c8;
-}
-.sidebar .widget.top-rated .rating strong {
+.star-rating span {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em;
   color: #009ad8;
+  font-size: 16px;
+}
+.star-rating span:before {
+  content: "\f005\f005\f005\f005\f005";
+  top: 0;
+  position: absolute;
+  left: 0;
 }
 
 /*
