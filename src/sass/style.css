@@ -301,9 +301,6 @@ form select {
 form textarea {
   resize: vertical;
 }
-/*
- * Reusable Components Style
- */
 .button, form input[type=submit], form button, form input[type=reset] {
   border: none;
   background: #009ad8;
@@ -1285,9 +1282,6 @@ form textarea {
     display: none !important;
   }
 }
-/*
- * Header Styles
- */
 .site-header {
   display: flex;
 }
@@ -1314,7 +1308,6 @@ form textarea {
   color: #bfc1c8;
 }
 
-/* styles.scss */
 .navbar {
   padding: 10px 20px;
   margin-left: 43%;
@@ -1323,12 +1316,10 @@ form textarea {
   z-index: 9999;
 }
 
-/* Style the custom Navbar */
 .custom-navbar {
-  float: right; /* Float the Navbar to the right */
+  float: right;
 }
 
-/* Style the Navbar Toggle button (for mobile) */
 .navbar-toggler {
   background: none;
   color: white;
@@ -1339,18 +1330,15 @@ form textarea {
   outline: none;
 }
 
-/* Show the Navbar Toggle button on smaller screens */
 @media screen and (max-width: 990px) {
   .navbar-toggler {
     display: inline-block;
   }
 }
-/* Style the Navbar Toggle button when hovered or active */
 .navbar-toggler:hover {
-  color: #009ad8; /* Change text color on hover or focus */
+  color: #009ad8;
 }
 
-/* Style the Nav.Link items */
 .nav-link {
   padding: 5px 25px;
   border: 2px solid transparent;
@@ -1358,8 +1346,8 @@ form textarea {
   color: white;
   transition: 0.3s ease;
   font-weight: 400;
-  margin-left: 43px; /* Add margin between Nav.Link items */
-  float: left; /* Float Nav.Link items to the left */
+  margin-left: 43px;
+  float: left;
 }
 
 .hero {
@@ -1625,41 +1613,6 @@ form textarea {
 }
 .photo .photo-title a {
   color: white;
-}
-
-.star-rating {
-  float: none;
-  overflow: hidden;
-  position: relative;
-  height: 15px;
-  line-height: 15px;
-  font-size: 16px;
-  width: 100px;
-  font-family: "FontAwesome";
-}
-.star-rating:before {
-  content: "\f005\f005\f005\f005\f005";
-  color: #1e202b;
-  float: left;
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-.star-rating span {
-  overflow: hidden;
-  float: left;
-  top: 0;
-  left: 0;
-  position: absolute;
-  padding-top: 1.5em;
-  color: #009ad8;
-  font-size: 16px;
-}
-.star-rating span:before {
-  content: "\f005\f005\f005\f005\f005";
-  top: 0;
-  position: absolute;
-  left: 0;
 }
 
 /*
