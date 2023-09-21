@@ -19,6 +19,7 @@ function Photo() {
 					setPhotos(response.data.photos);
 					setLoading(false);
 				})
+
 				.catch((error) => {
 					console.error("Error fetching photos:", error);
 				});
